@@ -1,0 +1,219 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+.nav-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px -2px 5px black;
+    line-height: 75px;
+}
+/* start nav logo div */
+.nav-logo-div{
+    display: flex;
+    align-items: center;
+}
+.nav-logo-div img{
+    width:80px;
+}
+.nav-gamer-text{
+    font-size:30px;
+    font-weight:bold;
+    padding-left:10px;
+}
+.letter-design{
+    color: #FF42A5;
+}
+/* end nav logo div */
+.nav-text-div a{
+    text-decoration: none;
+    color:black;
+    padding-right:30px;
+}
+.nav-btn{
+    padding:10px 10px;
+    border-radius:8px;
+    border:none;
+}
+.nav-btn i{
+    font-size:20px;
+    padding-left:5px;
+}
+.nav-btn .fa-youtube{
+    color: red;
+}
+.nav-btn .fa-tiktok{
+    text-shadow:1px 1px red;
+}
+/* end header section */
+
+.play-like-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.play-text-div{
+    background-image: url(images/Group\ 14.png);
+    padding:120px 50px 0px 120px;
+    background-size: cover;
+}
+.goat-h1{
+    font-size:50px;
+    font-weight: bold;
+    color:#b36fde;
+
+}
+.play-text-div ul li{
+    padding-top:20px;
+    color:rgb(79, 75, 75);
+}
+.sign-in-btn{
+    padding:20px 45px;
+    border-radius: 40px;
+    margin:30px 20px 20px 0px;
+    background-color:#FF42A5;
+    color:white;
+    border:none;
+    font-weight: bold;
+}
+.go-rogue-btn{
+    background-color: #4EC5F7;
+}
+.play-image-div{
+    width:50%;
+    padding:0px 40px;
+}
+.play-image-div img{
+    width:100%;
+}
+/* end play like section */
+
+.gamer-section{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    display: flex;
+    align-items: center;
+    padding:80px;
+}
+.gamer-image-div img{
+    width: 100%;
+}
+.gamer-text-div{
+    width:70%;
+    text-align: right;
+}
+.gamer-h1{
+    color:#b36fde;
+}
+.gamer-description{
+    padding-top:20px;
+    color:gray;
+}
+.gamer-bottom-text{
+    color: gray;
+}
+/* end gamer section */
+.online-game-section{
+    text-align: center;
+    padding-top:100px;
+}
+.online-game-div{
+    display: flex;
+    padding:30px 100px;
+    gap:10px;
+}
+.online-game-image{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    text-align: left;
+}
+.online-image img{
+    width:100%;
+    padding-bottom:20px;
+}
+
+
+@media screen and (max-width:576px) {
+    .nav-section{
+        flex-direction: column;
+        box-shadow: none;
+    }
+    .nav-text-div{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .play-like-section{
+        flex-direction: column-reverse;
+    }
+    .play-image-div{
+        width:80%;
+        padding:50px 40px;
+    }
+    /* end play like section */
+
+    .gamer-section{
+        flex-direction: column;
+        padding:0px;
+    }
+    .gamer-image-div{
+        display: flex;
+        justify-content: center;
+        padding-top:50px;
+    }
+    .gamer-image-div img{
+        width: 80%;
+    }
+    .gamer-text-div{
+        width:80%;
+        text-align: center;
+    }
+    /* end gamer section */
+
+    .online-game-div{
+        flex-direction: column;
+        row-gap: 50px;
+    }
+}
+@media screen and (min-width:577px) and (max-width:992px) {
+    .play-like-section{
+        flex-direction: column;
+        margin-left:0px;
+    }
+    .play-image-div{
+        width:80%;
+        padding:50px 40px;
+    }
+    .play-text-div{
+        padding:120px 50px 0px 200px;
+        width:100%;
+    }
+    .gamer-section{
+        flex-direction: column-reverse;
+        padding:0px;
+    }
+    .gamer-image-div{
+        display: flex;
+        justify-content: center;
+    }
+    .gamer-image-div img{
+        width: 80%;
+    }
+    .gamer-text-div{
+        width:80%;
+        text-align: center;
+        padding-top: 50px;
+    } 
+    /* end gamer section */
+    .online-game-div{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 50px;
+    }
+}
