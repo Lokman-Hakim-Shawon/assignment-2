@@ -108,7 +108,7 @@ body{
     text-align: right;
 }
 .gamer-h1{
-    color:#b36fde;
+    color: #FF42A5;
 }
 .gamer-description{
     padding-top:20px;
@@ -136,6 +136,43 @@ body{
 .online-image img{
     width:100%;
     padding-bottom:20px;
+}
+/* end online gamer section */
+
+.no-download-section{
+    margin:50px 100px;
+    position:relative;
+}
+.no-download-div{
+    width:100%;
+    position:absolute;
+    display: flex;
+}
+.no-download-text-div{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:150px 100px;
+    align-items: center;
+    width:50%;
+}
+.no-download-image-div{
+    position: relative;
+    width:50%;
+}
+
+.no-download-image-div .no-download-image{
+    width:100%;
+    padding:0px 0px 100px 100px;
+    position:absolute;
+    z-index: 1;
+}
+.no-download-div .short-image{
+    width:50%;
+    position: absolute;
+    margin:40% 0px 0px 0px;
+    z-index: 2;
 }
 
 
@@ -180,6 +217,37 @@ body{
         flex-direction: column;
         row-gap: 50px;
     }
+    /* end online gamer */
+    .no-download-section{
+        position:relative;
+        margin:0px auto;
+    }
+    .no-download-div{
+       flex-direction: column;
+       align-items: center;
+    }
+    .no-download-text-div{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        text-align: center;
+        padding-bottom:0px;
+    }
+
+    .no-download-image-div{
+        position: relative;
+        width:90%;
+    }
+    
+    .no-download-image-div .no-download-image{
+        width:100%;
+        padding:80px;
+    }
+    .no-download-div .short-image{
+        width:50%;
+        padding:20px 10px;
+    }
+    
 }
 @media screen and (min-width:577px) and (max-width:992px) {
     .play-like-section{
@@ -215,5 +283,35 @@ body{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         row-gap: 50px;
+    }
+    /* end online gamer */
+
+    .no-download-section{
+        position:relative;
+        margin:0px auto;
+    }
+    .no-download-div{
+       flex-direction: column;
+       align-items: center;
+    }
+    .no-download-text-div{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        text-align: center;
+    }
+
+    .no-download-image-div{
+        position: relative;
+        width:90%;
+    }
+    
+    .no-download-image-div .no-download-image{
+        width:100%;
+        padding:80px;
+    }
+    .no-download-div .short-image{
+        width:50%;
+        padding:20px 10px;
     }
 }
